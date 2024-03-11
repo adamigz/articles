@@ -53,6 +53,8 @@ npm run build
 php artisan serve
 ```
 ---
+#### In case you don't want to install this app localy, it's available at [articles.pitrowski.pl]('https://articles.pitrowski.pl')
+---
 ### Usage
 1. Home page
 Shows last 10 articles added to the database. Click article title to redirect to article page. Click author name to redirect to author page.
