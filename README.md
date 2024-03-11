@@ -76,3 +76,5 @@ Shows all authors (no pagination). You can add new author by clicking blue butto
 |`/getAllArticlesForAuthor/{fullname_slug}`|fullname_slug - (string) authors fullname slug "name-surname"|Returns all authors articles|`application/json`|
 |`/getTopAuthors`|<no params>|Return top 3 authors based on written articles amount from last week|`application/json`|
 
+### SQL.sql file
+I also included the .sql file to import if somehow Laravel migrations won't work. It has all the tables and and data as the live version [articles.pitrowski.pl](https://articles.pitrowski.pl)
