@@ -5,15 +5,14 @@
 - MySQL
 - Composer
 - npm
-
+---
+### <span style="color: red;">In case you don't want to install this app localy, it's available at <[articles.pitrowski.pl](https://articles.pitrowski.pl)></span>
+---
 ### Instalation
 1. Clone GitHub repository
 ```
 git clone https://github.com/adamigz/articles.git
 ```
----
-### <span style="color: red;">In case you don't want to install this app localy, it's available at <[articles.pitrowski.pl](https://articles.pitrowski.pl)></span>
----
 2. Install laravel dependencies
 ```
 composer install
