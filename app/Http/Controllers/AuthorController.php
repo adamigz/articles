@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Author;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class AuthorController extends Controller
 {
@@ -37,6 +38,7 @@ class AuthorController extends Controller
         $author->name = $request->name;
         $author->surname = $request->surname;
         $author->fullname = $request->name.' '.$request->surname;
+        $author->fullname_slug = Str::slug($author->fullname);
         $author->save();
 
         return redirect()->route('authors.index');
@@ -71,6 +73,7 @@ class AuthorController extends Controller
         $author->name = $request->name;
         $author->surname = $request->surname;
         $author->fullname = $request->name.' '.$request->surname;
+        $author->fullname_slug = Str::slug($author->fullname);
         $author->save();
 
         return redirect()->route('authors.index');

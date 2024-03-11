@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ApiController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/getArticle/{id}', [ApiController::class, 'getArticle']);
+
+Route::get('getAllArticlesForAuthor/{name_slug}', [ApiController::class, 'getAllArticlesForAuthor']);
+
+Route::get('getTopAuthors', [ApiController::class, 'getTopAuthors']);

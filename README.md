@@ -36,7 +36,7 @@ php artisan key:generate
 ```
 php artisan migrate
 ```
-7. Run seeders (to insert somen authors in to the database)
+7. Run seeders (to insert some authors in to the database)
 ```
 php artisan db:seed
 ```
@@ -46,9 +46,27 @@ npm install
 ```
 9. Build js files
 ```
-npm run dev
+npm run build
 ```
 10. Run app in local environment
 ```
 php artisan serve
 ```
+---
+### Usage
+1. Home page
+Shows last 10 articles added to the database. Click article title to redirect to article page. Click author name to redirect to author page.
+
+2. Articles
+Shows all articles (no pagination). You can add new article by clicking blue button Create, and delete every article with red button Delete. By clicking the article title you will be redirected to the article page. You can there edit article by clicking blue button Update and also go to author/s page by clicking name at bottom right corner of article.
+
+3. Authors
+Shows all authors (no pagination). You can add new author by clicking blue button Create, and delete every author with red button Delete. By clicking the author name you will be redirected to the author page. There will be shown all authors articles (also can click the title of every to redirect to article page). You can there edit author by clicking blue button Update. After installation there will be 10 randomly generated authors (step 7.)
+
+### API
+|Endpoint|Params|Description|Response type|
+|--------|------|-----------|-------------|
+|`/getArticle/{id}`|id - (int) id of article from database|Returns the article with author/s for given id|`application/json`|
+|`/getAllArticlesForAuthor/{fullname_slug}`|fullname_slug - (string) authors fullname slug "name-surname"|Returns all authors articles|`application/json`|
+|`/getTopAuthors`|<no params>|Return top 3 authors based on written articles amount from last week|`application/json`|
+
