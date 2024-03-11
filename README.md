@@ -53,7 +53,7 @@ npm run build
 php artisan serve
 ```
 ---
-#### In case you don't want to install this app localy, it's available at [articles.pitrowski.pl]('https://articles.pitrowski.pl')
+### <span style="color: red;">In case you don't want to install this app localy, it's available at [articles.pitrowski.pl]('https://articles.pitrowski.pl')</span>
 ---
 ### Usage
 1. Home page
