@@ -21,11 +21,11 @@ cp .env.example .env
 ```
 4. Edit this data in .env file
 >DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=articles
-DB_USERNAME=root
-DB_PASSWORD=
+>DB_HOST=127.0.0.1
+>DB_PORT=3306
+>DB_DATABASE=articles
+>DB_USERNAME=root
+>DB_PASSWORD=
 5. Generate app key
 ```
 php artisan key:generate
