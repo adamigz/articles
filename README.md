@@ -15,6 +15,10 @@ git clone https://github.com/adamigz/articles.git
 ```
 composer install
 ```
+In case of errors run
+```
+composer update
+```
 3. Copy .env.example to .env
 ```
 cp .env.example .env
